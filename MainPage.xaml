@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestBluetooth.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+			<Label Text="Click the update button to get Bluetooth state"/>
+			<Button Text="Update" Clicked="Button_Clicked"/>
+			<StackLayout Orientation="Horizontal">
+			    <Label Text="Bluetooth Enabled:"/>
+				<Label x:Name="labelBluetoothEnabled"/>
+			</StackLayout>
+
+			<Label
+                Text="Debug Log:"
+                />
+
+			<Editor  x:Name="editorDebug" VerticalOptions="FillAndExpand" HeightRequest="600" 
+					 Text="This&#10;
+							will&#10;
+							get&#10;
+							overwritten&#10;
+							when&#10;
+							you&#10;
+							click&#10;
+							update&#10;
+							editor&#10;
+							doesn't&#10;
+							refresh&#10;
+							multiple&#10;
+							lines&#10;
+							correctly&#10;
+							so I put this in&#10;
+							Another bug?"
+					 />
+			
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
